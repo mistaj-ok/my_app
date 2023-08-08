@@ -1,0 +1,91 @@
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.appleLogo {
+    width: 45px;
+}
+
+.attribute {
+    font-weight: 500;  
+    color: #F29E4C;
+}
+
+
+.header-content {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /* margin-right: 5rem; */
+}
+
+.header-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.4rem;
+}
+
+.header-content p {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--color-text);
+
+    margin-top: 1.5rem;
+}
+
+#text-comment {
+    font-style: oblique ;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--color-comment);
+}
+
+.header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.header-image img {
+    max-width: 300px;
+}
+
+@media screen and (max-width: 1050px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header-content {
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        padding: 2rem;
+    }
+ 
+    .header-content {
+        /* background-color: var(--color-hero2); */
+        font-size: 45px;
+
+        
+        padding: 0;
+    }
+    .header-image {
+        display: none;
+    }
+
+
+}

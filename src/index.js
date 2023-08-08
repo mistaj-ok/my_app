@@ -1,12 +1,7 @@
 import React from 'react';
-import  ReactDOM  from "react-dom";
+import { createRoot } from 'react-dom/client'; // Import createRoot from the correct location
+import App from './App'; // Import your App component
 
-// app component is rendered
-import App from './App';
-
-// import css, allos us to use the varriables in ./App.css
-import './index.css';
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(<App />)
-ReactDOM.render(<App />, document.getElementById('root'));
+// Use createRoot to render the component
+const root = createRoot(document.getElementById('root'));
+root.render(<App />);
