@@ -4,7 +4,7 @@ import React from 'react'
 import { useState } from 'react';
 
 /* import icons */
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+// import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import './navbar.css';
 import { Link } from 'react-router-dom';
 // import logo from '../../assets/logo.svg'
@@ -42,8 +42,8 @@ const NavBar = () => {
       </div>
       <div className='navbar-menu'>
         {toggleMenu
-          ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
-          : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />
+          // ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
+          // : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />
 
         }
         {toggleMenu && (

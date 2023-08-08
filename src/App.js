@@ -3,14 +3,15 @@ import './app.css';
 // import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 // import { Header, Feature, Projects } from './containers';
 // import { NavBar, Skills, Learning, Home } from './components';
-
+// import NavBar from './components';
+import NavBar from './components/navbar/Navbar'
 const App = () => {
   return (
     // <Router>
       <div className="App">
         <div className="gradient__bg">
-          {/* <NavBar />
-          <Header /> */}
+          <NavBar />
+          {/* <Header /> */}
           {/* <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/math" element={<Learning />} />
