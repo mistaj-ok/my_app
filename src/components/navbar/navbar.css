@@ -1,0 +1,153 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.navbar-links {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar-links_logo {
+    /* margin-right: 2rem; */
+
+}
+
+.navbar-links_logo img {
+    width: 62px;
+    height: 16px;    
+}
+
+.navbar-links_container {
+    display: flex;
+    flex: row;
+
+}
+
+.navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.navbar-links_container p,
+.navbar-sign p, 
+.navbar-menu_container p {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.navbar-sign button, 
+.navbar-menu_container button {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #ff4820;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.navbar-menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+
+}
+.navbar-menu svg {
+    cursor: pointer;
+
+}
+
+.navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0,0,0,0.2);
+
+}
+
+.navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+.navbar-menu_container-links-sign {
+    display: none;
+}
+
+/* media queries */
+
+/* screens <= 767px width (Phones) */
+@media screen and (max-width: 767px) {
+    .navbar {
+        padding: 2rem;
+    }
+    .navbar-sign {
+        display: none
+    }
+    .navbar-menu_container {
+        top: 20px;
+    }
+    .navbar-menu_container-links-sign {
+        display: block;
+    }
+}
+
+
+/* wider than tablet smaller than large desktop */
+@media screen and (max-width: 992px) {
+    
+    header {
+        background-color: beige;
+    }
+    
+    img {
+        max-width: 300px;
+    }
+
+    .navbar-links_container {
+        display: none;
+    }
+    .navbar-menu {
+        display: flex;
+
+    }
+}
+
+/* widescreen desktop monitors */
+
+
+@media screen and (min-width: 1200px) {
+    .navbar {
+        /* background-color: beige; */
+        padding: 2rem 4rem;
+    }
+}
+

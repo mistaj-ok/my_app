@@ -1,0 +1,124 @@
+.skills {
+    flex-direction: row;
+    display: flex;
+    border: 2.4px solid #7fe4e4;
+
+}
+
+
+.skills-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+h1 {
+    flex: 1;
+    align-items: flex-start;
+}
+.skills .image-boxes {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 2.4px solid #fff;
+}
+
+.img-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;  
+}
+
+
+
+.img-txt {
+    text-align: center;
+    margin-top: 0;
+}
+
+.img-box .wide {
+    height: 200px;
+}
+
+/* .image {
+    max-width: 900px;
+} */
+
+.skills p {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+
+    border: 2.4px solid #38b949;
+
+}
+
+.skills h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.4rem;
+}
+
+
+@media (max-width: 480px) {
+    /* CSS styles for phones */
+    img {
+        max-width: 100px;
+        align-self: center;
+    }
+  }
+@media screen and (max-width: 500px) {
+    
+    .skills, .skills-content {
+        padding: 2rem;
+        max-width: 100%;
+
+    };
+    .image-boxes {
+        flex-direction: column;
+    }
+    .skills {
+        flex-direction: column;
+    }
+    img {
+        max-width: 150px;
+    }
+
+}
+
+
+@media screen and (max-width: 1050px) {
+ 
+    .header {
+        flex-direction: column;
+    }
+
+    .header-content {
+        margin: 0 0 3rem;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    /* CSS styles for wide monitors */
+    #hero {
+        max-width: 400px;
+        align-self: center;
+    }
+    
+  }

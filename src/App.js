@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
+import './app.css'
+
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
+import { Header, Feature, Projects } from './containers'
+
+import { NavBar, Skills, Learning, Home } from './components'
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hi welcome to chilis <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    <Router>
+
+      <div className="App">
+
+        <div className="gradient__bg">
+
+          <NavBar />
+
+          <Header />
+
+          <Routes>
+
+          <Route exact path="/" Component={Home} />
+
+            <Route path="/math" element={<Learning />} />
+
+            {/* <Route path="/case-studies" component={CaseStudies} />
+
+            <Route path="/library" component={Library} /> */}
+
+          </Routes>
+
+          
+
+        </div>
+
+      
+
+      </div>
+
+    </Router>
+
+  )
+
 }
 
-export default App;
+export default App
+
