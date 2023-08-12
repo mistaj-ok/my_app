@@ -10,11 +10,7 @@ const Home = () => {
   return (
     <div className='home section__padding' id="home">
       <div className='home-content'>
-      <h1> Hi welcome to chilis
-        
-        
-      
-        ER!!!!!!!</h1>
+      <h1> Hi welcome to chilis !!!!!!!</h1>
       {/* <img id="hero" src={} alt="nj" /> */}
 
       </div>

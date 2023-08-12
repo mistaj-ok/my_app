@@ -23,8 +23,10 @@ const MyNavbar = () => {
         <Nav.Link as={Link} to="/">Home</Nav.Link>
           <Nav.Link href="#about">About</Nav.Link>
           <NavDropdown title="Learning" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action">Math</NavDropdown.Item>
-            <NavDropdown.Item href="#another-action">Another action</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/math">Math</NavDropdown.Item>
+            <NavDropdown.Item  as={Link} to="/cs">Computer Science</NavDropdown.Item>
+            <NavDropdown.Item  as={Link} to="/physics">Physics</NavDropdown.Item>
+
             <NavDropdown.Divider />
             <NavDropdown.Item href="#something-else">Something else</NavDropdown.Item>
           </NavDropdown>
