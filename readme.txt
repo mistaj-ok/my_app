@@ -12,3 +12,5 @@ Some notes and reference material to make this process easier in the future.
 Key learnings of react:
 
     1. The 
+
+    here is the setup YML file that was working (pipeline to deploy to gitlab pages)

@@ -12,7 +12,6 @@ function App() {
             <Route path="/" element={<Home />} /> 
             {/* <Route path="/" element={<Home />} />  */}
             {/* <Route path="/" element={<Home />} />  */}
-
             {/* Define more routes and elements */}
           </Routes>
         </div>
