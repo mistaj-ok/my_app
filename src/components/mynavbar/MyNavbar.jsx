@@ -10,12 +10,13 @@ import { Link } from 'react-router-dom';
 
 
 
-
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
+import { NavDropdown} from 'react-bootstrap';
+import { Navbar} from 'react-bootstrap';
 
 const MyNavbar = () => {
   return (
-    <Navbar expand="lg" bg="light" variant="light">
+     <Navbar expand="lg" bg="light" variant="light">
       <Navbar.Brand href="#home">nj</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -32,7 +33,7 @@ const MyNavbar = () => {
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>
-    </Navbar>
+    </Navbar> 
   );
 };
 

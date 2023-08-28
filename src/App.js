@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Note the addition of Routes
-import { Home, MyNavbar } from './components';
-
+import { MyNavbar } from './components';
+import { Home } from './components'
 function App() {
   return (
     <Router>
