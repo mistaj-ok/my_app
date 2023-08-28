@@ -5,7 +5,6 @@ Developers log:
 After 4 days of relearning react basics, many iterations of github and gitlab projects, along 
 with their associated pipeline setup goodness.
 
-Add in the spice of git version control protocols and developing environment configuration.
 
 Some notes and reference material to make this process easier in the future.
 
